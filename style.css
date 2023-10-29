@@ -1,27 +1,23 @@
-p {
-    font-style: italic;
-    font-weight: bold;
-    font-family: Courier New;
+.textcols {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
 }
-
-body {
-    background-color: lightBlue;
-    color: white;
-    text-align: center;
+.textcols-row {
+	 display: table-row;
 }
-
-button {
-    color: black;
-    font-style: italic;
-    font-weight: bold;
-    font-family: Courier New;
+.textcols-item {
+	display: table-cell;	
+	width: 33%;
+	vertical-align: top;
+	padding: 0;
+	background: #fff2e1;
+	border-right: 30px solid #fff;
+	border-left: 30px solid #fff;
 }
-
-input {
-    font-weight: bold;
-    text-align: right;
+.textcols-row .textcols-item:first-child {
+	border-left: none;
 }
-
-head {
-    text-align: right;
+.textcols-row .textcols-item:last-child {
+	border-right: none;
 }
